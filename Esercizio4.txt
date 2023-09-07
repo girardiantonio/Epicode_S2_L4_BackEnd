@@ -1,0 +1,39 @@
+SELECT *
+FROM Impiegato
+WHERE Eta < 29;
+
+SELECT * 
+FROM Impiegato
+WHERE RedditoMensile <= 800;
+
+SELECT *
+FROM Impiegato
+WHERE DetrazioneFiscale = 1;
+
+SELECT *
+FROM Impiegato
+WHERE DetrazioneFiscale = 0;
+
+SELECT *
+FROM Impiegato
+WHERE Cognome LIKE 'G%'
+ORDER BY Cognome;
+
+SELECT COUNT(*) AS NrTotaleImpiegati
+FROM Impiegato
+
+SELECT SUM(RedditoMensile) AS TotaleRedditi
+FROM Impiegato
+
+SELECT AVG(RedditoMensile) AS TotaleRedditi
+FROM Impiegato
+
+SELECT MAX(RedditoMensile) AS RedditoMensileMaggiore
+FROM Impiegato
+
+SELECT MIN(RedditoMensile) AS RedditoMensileMaggiore
+FROM Impiegato
+
+SELECT AVG(Eta) AS EtaMediaImpiegati
+FROM Impiegato
+
